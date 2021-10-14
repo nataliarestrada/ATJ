@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo2"
+    android:background="@drawable/fondo1"
     tools:context=".MainActivity"
     app:passwordToggleEnabled="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:background="#d8000000"
+        android:background="#C4000000"
         android:gravity="center"
         android:layout_height="match_parent">
 
