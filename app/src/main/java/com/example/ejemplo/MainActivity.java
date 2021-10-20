@@ -12,12 +12,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_entrar = (Button) findViewById(R.id.btn_crearCuenta);
+        btn_entrar = (Button) findViewById(R.id.btn_entrar);
         btn_entrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i;
-                i = new Intent(MainActivity.this,RegistrarActivity.class);
+                i = new Intent(MainActivity.this,LocalidadesActivity.class);
                 startActivity(i);
             }
         });
