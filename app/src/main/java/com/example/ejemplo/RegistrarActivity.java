@@ -1,4 +1,5 @@
 package com.example.ejemplo;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -6,18 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
-    private Button btn_entrar;
+public class RegistrarActivity extends AppCompatActivity {
+    private Button btn_aceptar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        btn_entrar = (Button) findViewById(R.id.btn_crearCuenta);
-        btn_entrar.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_registrar);
+        btn_aceptar = (Button) findViewById(R.id.btn_aceptar);
+        btn_aceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i;
-                i = new Intent(MainActivity.this,RegistrarActivity.class);
+                i = new Intent(RegistrarActivity.this,LocalidadesActivity.class);
                 startActivity(i);
             }
         });
